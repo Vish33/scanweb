@@ -1,0 +1,911 @@
+<html>
+<head>
+<title>Docs For Class scanweb</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">ScanWeb v1.0</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_ScanWeb v1.0.html" class="menu">class tree: ScanWeb v1.0</a> ]
+		  [ <a href="../elementindex_ScanWeb v1.0.html" class="menu">index: ScanWeb v1.0</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_ScanWeb v1.0.html">ScanWeb v1.0</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../ScanWeb v1.0/_demo_1.php.html">		demo_1.php
+		</a><br>
+			<a href="../ScanWeb v1.0/_demo_2.php.html">		demo_2.php
+		</a><br>
+			<a href="../ScanWeb v1.0/_demo_3.php.html">		demo_3.php
+		</a><br>
+			<a href="../ScanWeb v1.0/_demo_4.php.html">		demo_4.php
+		</a><br>
+			<a href="../ScanWeb v1.0/_demo_5.php.html">		demo_5.php
+		</a><br>
+			<a href="../ScanWeb v1.0/_src---l_balise_html.php.html">		l_balise_html.php
+		</a><br>
+			<a href="../ScanWeb v1.0/_src---scanweb.php.html">		scanweb.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../ScanWeb v1.0/scanweb.html">scanweb</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: scanweb</h1>
+Source Location: /src/scanweb.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Cette classe permet d'extraire le contenu d'une page web ou d'une partie de page</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Guillaume Ripoche &lt;<a href="mailto:guillaume.ripoche@hotmail.fr">guillaume.ripoche@hotmail.fr</a>&gt;</li>
+                  </ul>
+
+
+
+
+        
+        
+<h4>Version:</h4>
+<ul>
+  <li>1.0</li>
+</ul>
+
+        
+</td>
+
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methoddecoup_cont_balise">decoup_cont_balise</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodeclate_bal">eclate_bal</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodextrait_c2">extrait_c2</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodflatweb">flatweb</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodfonction_1">fonction_1</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodgenealogie">genealogie</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodgen_esp">gen_esp</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodhtml_ver_texte">html_ver_texte</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodinfo_balise">info_balise</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodpage2tab">page2tab</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodrech_elem">rech_elem</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodreconstruit_page_pgrave">reconstruit_page_pgrave</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodrec_attribut">rec_attribut</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodrec_p_curl">rec_p_curl</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodrec_text">rec_text</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodret_par_block">ret_par_block</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodvir_esp_gd">vir_esp_gd</a></li>
+    <li><a href="../ScanWeb v1.0/scanweb.html#methodvir_quote_autour">vir_quote_autour</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 12]<br />
+Cette classe permet d'extraire le contenu d'une page web ou d'une partie de page<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Guillaume Ripoche &lt;<a href="mailto:guillaume.ripoche@hotmail.fr">guillaume.ripoche@hotmail.fr</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>1.0</td>
+  </tr>
+  <tr>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td>GNU/GPL</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="methoddecoup_cont_balise"></a>
+	<h3>method decoup_cont_balise <span class="smalllinenumber">[line 488]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array decoup_cont_balise(
+array
+$tab, string
+$regex)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Découpe le tableau plat suivant la clé de départ<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>protion de tableau contenant l'élément et sa déscendence</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>le tableau plat</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$regex</b>&nbsp;&nbsp;</td>
+        <td>clé de l'élément</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodeclate_bal"></a>
+	<h3>method eclate_bal <span class="smalllinenumber">[line 55]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array eclate_bal(
+string
+$string)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Découpe le code source d'une page web suivant les marqueurs de balises<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>contenant la page web découpé suivant les marqueurs de balise</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$string</b>&nbsp;&nbsp;</td>
+        <td>Code source de la page web</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodextrait_c2"></a>
+	<h3>method extrait_c2 <span class="smalllinenumber">[line 664]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array extrait_c2(
+array
+$tab)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Récupère les balises utiles contenant du texte affichable<br /><br /><p>(NB : les textes des &lt;select&gt; ne sont pas récupérés)</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>array de type ('val'=&gt;array(texte,texte),'ram'=&gt;array(array(postion),(type de balise)))</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>=&gt; flatweb</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodflatweb"></a>
+	<h3>method flatweb <span class="smalllinenumber">[line 69]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array flatweb(
+array
+$tab, array
+$balise, [bool
+$sec = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Tansformer le tableau de balise en tableau unidimensionnel ordonné de la page web<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>(tableau plat de la page web)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>array de balise de la page web scanné revoyé par (eclate_bal)</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$balise</b>&nbsp;&nbsp;</td>
+        <td>liste des balises html (include l_balise_html)</td>
+      </tr>
+          <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$sec</b>&nbsp;&nbsp;</td>
+        <td>si (true) permet de protéger les scripts et les commentaires en les passant avec htmlspecialchars</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodfonction_1"></a>
+	<h3>method fonction_1 <span class="smalllinenumber">[line 533]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void fonction_1(
+
+$tab)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		fonction de test, permet tout simplement d'afficher un tableau<br /><br /><p>mixed $tab un tableau</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgenealogie"></a>
+	<h3>method genealogie <span class="smalllinenumber">[line 618]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array genealogie(
+string
+$cle, array
+$tab)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Revoie l'arborescence d'un objet html<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>liste des balises contenant notre objet html ainsi que leur position (position,type de balise)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$cle</b>&nbsp;&nbsp;</td>
+        <td>clé de la balise</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>flatweb</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgen_esp"></a>
+	<h3>method gen_esp <span class="smalllinenumber">[line 743]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string gen_esp(
+
+$cb)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Génère un espace à dimension variable<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>un espace (pour identiter le code)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$cb</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodhtml_ver_texte"></a>
+	<h3>method html_ver_texte <span class="smalllinenumber">[line 563]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string html_ver_texte(
+array
+$tab)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Convertie le flatweb en du texte (avec <br /> pour les retours à la ligne)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>le texte de la page</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>tableau issu de extrait_c2</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinfo_balise"></a>
+	<h3>method info_balise <span class="smalllinenumber">[line 334]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array info_balise(
+string
+$balise)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		renvoie les attributs d'une balise<br /><br /><p>Si aucun attribut n'est detecté, la fonction renvoi array(0 =&gt; 'pas d\'attibuts pour cette balise !')</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>array sous la forme (attribut =&gt; valeur)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$balise</b>&nbsp;&nbsp;</td>
+        <td>string contenant le nom de la balise + ses attributs</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpage2tab"></a>
+	<h3>method page2tab <span class="smalllinenumber">[line 398]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array page2tab(
+string
+$url, [bool
+$sec = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Moteur de base du programme, il permet de récupérer la page web et de la convertir en tableau plat<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>le tableau plat de la page web (flatweb)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>la page à scanner</td>
+      </tr>
+          <tr>
+        <td class="type">bool&nbsp;&nbsp;</td>
+        <td><b>$sec</b>&nbsp;&nbsp;</td>
+        <td>(si true commentaire et script traités avec htmlspecialchars</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrech_elem"></a>
+	<h3>method rech_elem <span class="smalllinenumber">[line 432]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array rech_elem(
+array
+$tab, array
+$a_match)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Cherche une ou plusieurs balise(s) html en précisant ou non les attributs<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>contient les portions correspondant aux motifs</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>le tableau plat de la page web (ou celui issu d'une précèdente extraction)</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$a_match</b>&nbsp;&nbsp;</td>
+        <td>array de motif de recherche</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodreconstruit_page_pgrave"></a>
+	<h3>method reconstruit_page_pgrave <span class="smalllinenumber">[line 758]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string reconstruit_page_pgrave(
+array
+$tab)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Reconstruit une page web à partir de flatweb<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>la page web reconstruite (pour afficher, ou graver avec fopen() )</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>=&gt; flatweb</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrec_attribut"></a>
+	<h3>method rec_attribut <span class="smalllinenumber">[line 711]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array rec_attribut(
+array
+$tab, string
+$regex)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Récupére les attributs d'une balise à partir de sa clé<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>array de type (attribut=&gt;valeur de l'attribut)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>flatweb</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$regex</b>&nbsp;&nbsp;</td>
+        <td>clé de la balise</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrec_p_curl"></a>
+	<h3>method rec_p_curl <span class="smalllinenumber">[line 25]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string rec_p_curl(
+string
+$url)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Récupère le code source d'une page web avec curl  Retourne une chaine vide si une erreur survient.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>Url de la page à récupérer</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrec_text"></a>
+	<h3>method rec_text <span class="smalllinenumber">[line 520]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string rec_text(
+array
+$tab, [int
+$mode = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Récupére le texte de la page ou de la zone donnée:<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>texte de la page web</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>tableau plat de la page web ou d'une zone donnée</td>
+      </tr>
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$mode</b>&nbsp;&nbsp;</td>
+        <td>paramètre de retour : 0 =&gt; <br /> , 1 =&gt; \n</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodret_par_block"></a>
+	<h3>method ret_par_block <span class="smalllinenumber">[line 545]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array ret_par_block(
+array
+$tab)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Détermine le premier élément bloquant (entrainant un retour à la ligne)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>array de type (type de balise,position)</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$tab</b>&nbsp;&nbsp;</td>
+        <td>tableau de position et de type d'élément ( créé par  extrait_c2)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodvir_esp_gd"></a>
+	<h3>method vir_esp_gd <span class="smalllinenumber">[line 359]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string vir_esp_gd(
+string
+$string)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Supprime les espaces avant et après le nom de l'attribut<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>string &quot;purifié&quot;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$string</b>&nbsp;&nbsp;</td>
+        <td>string à purifier (nom de l'attribut)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodvir_quote_autour"></a>
+	<h3>method vir_quote_autour <span class="smalllinenumber">[line 372]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string vir_quote_autour(
+string
+$string)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Supprime les quotes entourant la valeur d'un attribut<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>&quot;purifié&quot;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$string</b>&nbsp;&nbsp;</td>
+        <td>string à purifier (valeur de l'attribut)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Tue, 30 Apr 2013 13:34:07 +0000 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
